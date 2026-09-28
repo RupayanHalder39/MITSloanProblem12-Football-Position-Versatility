@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite it using the metadata below."
+title: "Position as a Variable, Not a Label: Tactical Distance and Role-Conditioned Performance in Versatile Footballers"
+type: software
+authors:
+  - family-names: Halder
+    given-names: Rupayan
+repository-code: "https://github.com/RupayanHalder39/MITSloanProblem12-Football-Position-Versatility"
+url: "https://github.com/RupayanHalder39/MITSloanProblem12-Football-Position-Versatility"
+version: 1.0.0
+date-released: 2026-09-28
+keywords:
+  - football analytics
+  - soccer
+  - positional versatility
+  - tactical distance
+  - role-conditioned performance
+license: MIT

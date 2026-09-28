@@ -1,0 +1,57 @@
+{
+  "problem": 12,
+  "title": "Position as a Variable, Not a Label: Tactical Distance and Role-Conditioned Performance in Versatile Footballers",
+  "category": "Soccer",
+  "cohort": {
+    "player_match_observations": 23627,
+    "eligible_players": 120,
+    "eligible_role_comparisons": 159,
+    "role_purity_threshold": 0.70,
+    "minimum_clean_minutes_per_role": 600,
+    "minimum_qualifying_matches_per_role": 8
+  },
+  "performance_dimensions": ["Attack", "Progression", "Possession", "Defense"],
+  "role_graph": {
+    "nodes": ["CB", "FB", "WB", "DM", "CM", "AM", "W", "ST"],
+    "baseline_edges": [["CB", "FB"], ["CB", "DM"], ["FB", "WB"], ["FB", "CM"], ["WB", "W"], ["DM", "CM"], ["CM", "AM"], ["CM", "W"], ["AM", "W"], ["AM", "ST"], ["W", "ST"]],
+    "conservative_edges": [["CB", "FB"], ["CB", "DM"], ["FB", "WB"], ["WB", "W"], ["DM", "CM"], ["CM", "AM"], ["AM", "W"], ["AM", "ST"], ["W", "ST"]],
+    "distance_definition": "Unweighted shortest-path edge count in the role graph."
+  },
+  "typology": {
+    "stable_advantage": {"count": 16, "percentage": 10.06},
+    "trade_off": {"count": 36, "percentage": 22.64},
+    "neutrality": {"count": 40, "percentage": 25.16},
+    "insufficient_evidence": {"count": 67, "percentage": 42.14}
+  },
+  "baseline_cross_minus_adjacent": {
+    "estimate": 0.1873,
+    "ci_lower": 0.0583,
+    "ci_upper": 0.3285,
+    "cohens_d": 0.8939
+  },
+  "distance_only": {
+    "spearman_rho": 0.1547,
+    "permutation_p": 0.0488,
+    "interpretation": "Positive observational association; not a causal effect."
+  },
+  "consensus_only": {
+    "estimate": 0.1854,
+    "ci_lower": 0.0565,
+    "ci_upper": 0.3241
+  },
+  "robustness": {
+    "leave_one_player_all_positive": true,
+    "leave_one_transition_all_positive": true
+  },
+  "archetypes": [
+    {"player": "Eric García", "roles": ["FB", "DM"], "classification": "stable advantage", "profile_divergence": 1.1744, "attack_difference": 0.3364, "progression_difference": 0.5455, "possession_difference": 0.9759, "defense_difference": -0.1273},
+    {"player": "Pedri", "roles": ["CM", "AM"], "classification": "trade-off", "profile_divergence": 1.0588, "attack_difference": -0.1132, "progression_difference": 0.6999, "possession_difference": 0.4649, "defense_difference": -0.6343},
+    {"player": "E. Camavinga", "roles": ["DM", "CM"], "classification": "neutrality", "profile_divergence": 0.0682, "attack_difference": -0.0046, "progression_difference": 0.0537, "possession_difference": 0.0372, "defense_difference": 0.0192}
+  ],
+  "limitations": [
+    "Observational design with remaining contextual confounding.",
+    "No complete event stream with timestamps sufficient for event-to-role attribution.",
+    "No event coordinates or tracking data.",
+    "Player-match totals cannot be divided perfectly across within-match role segments."
+  ]
+}
