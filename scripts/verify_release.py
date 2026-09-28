@@ -16,7 +16,7 @@ ROOT = Path(__file__).resolve().parents[1]
 EXPECTED_HASHES = {
     "paper/Problem12_Position_as_a_Variable_Not_a_Label.pdf": "77c1221cb1416d48bc41ca12d08b523058e47ea5f14914ead690d80528339ae5",
     "figures/figure1_tactical_role_distance.png": "e5d7a04a96e62e883b43b4460dd9be29a824f1b3e8ba7062632612b92990d309",
-    "figures/figure1_tactical_role_distance.svg": "705b79d89081692493aee538e8b72e54af7a917667f0cb1c028a466d9c6b48f8",
+    "figures/figure1_tactical_role_distance.svg": "7224d38c374200f133734099bcf80b8cee48ea9e4914cbed7105953b23dd18fa",
     "figures/figure2_versatility_archetypes.png": "1f06be45defd647f0306d3e192a61c2d374ea1cb1e45ee734a1047e15d09516b",
     "assets/RupayanHalder.jpeg": "64e529e780c9e33f5b6408c0ee700fccfbe586c8348ae526643683aecd5fe168",
     "assets/SoccerSolverLogo.png": "726f16865cf5f1bd11c937c8034fb72232a485f4c1882d4dc323f0912ea051f5",

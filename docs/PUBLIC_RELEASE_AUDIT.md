@@ -74,6 +74,23 @@ copied.
 
 ## Publication record
 
-- Initial release commit: pending.
-- Final repository HEAD: pending.
-- Push verification: pending.
+- Initial release commit: `e7dcdc1` (`Initial public release for MIT Sloan Problem 12`).
+- Remote: `https://github.com/RupayanHalder39/MITSloanProblem12-Football-Position-Versatility.git`.
+- Branch: `main`, tracking `origin/main`.
+- Push verification: passed on 2026-09-28. The public README was retrieved successfully from
+  GitHub after the push and its repository-relative figure, asset, and paper paths were retained.
+
+## Final repository structure
+
+- `README.md`, `CITATION.cff`, `LICENSE`, `.gitignore`, and `requirements.txt`.
+- `paper/`: final two-page MIT Sloan abstract.
+- `figures/`: approved white tactical-role figure and frozen archetype figure.
+- `assets/`: researcher photograph and SoccerSolver logo.
+- `src/`: public-safe method definitions and Figure 1 generator.
+- `results/`: frozen aggregate results and robustness summaries.
+- `data/`: source-data access and redistribution documentation only.
+- `docs/`: methodology, provenance, reproducibility, licensing, and this audit.
+- `scripts/`: deterministic release verification.
+
+The audit update is a documentation-only commit after the initial release commit; the current
+repository HEAD is recorded by Git history rather than embedded recursively in its own contents.
